@@ -9,7 +9,7 @@ body {
   font-family: sans-serif;
 }
 
-.input-label{
+.input-label {
   display: flex;
   gap: 1rem;
 }
@@ -23,7 +23,7 @@ h4 {
 .list {
   border: none;
   padding-left: 1rem;
-  width:100%;
+  width: 100%;
 }
 
 .add-list:focus,
@@ -31,7 +31,7 @@ h4 {
   outline: none;
 }
 
-.submit-form{
+.submit-form {
   display: flex;
   justify-content: space-between;
   padding-right: 1rem;

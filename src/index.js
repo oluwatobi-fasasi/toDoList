@@ -34,7 +34,6 @@ class ToDo {
       deleteIcon.textContent = 'delete';
       deleteIcon.style.display = 'none';
 
-
       divInputLabel.appendChild(checkBox);
       divInputLabel.appendChild(label);
 
@@ -48,18 +47,18 @@ class ToDo {
       this.listContainer.appendChild(div);
 
       Icon.addEventListener('click', () => {
-        Icon.style.display = 'none'
+        Icon.style.display = 'none';
         deleteIcon.style.display = 'inline';
         deleteIcon.addEventListener('click', () => {
           this.toDo = removeTodo(this.toDo, i);
           localStorage.setItem('toDo', JSON.stringify(this.toDo));
           window.location.reload();
           this.renderToDo();
-        })
+        });
       });
 
       label.addEventListener('keyup', (e) => {
-        if (e.key === 'Enter') { 
+        if (e.key === 'Enter') {
           const newDescription = label.value.trim();
           if (newDescription !== '') {
             this.toDo = editTodo(this.toDo, i, newDescription);
@@ -69,9 +68,7 @@ class ToDo {
           }
         }
       });
-      
     }
-
   }
 
   init() {
@@ -82,4 +79,3 @@ class ToDo {
 
 const newToDo = new ToDo();
 newToDo.init();
-
