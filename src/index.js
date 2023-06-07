@@ -71,7 +71,7 @@ class ToDo {
         }
       });
 
-      checkBox.addEventListener('click', () => {
+      checkBox.addEventListener('change', () => {
         label.classList.toggle('checked');
         if (todo.completed === false) {
           todo.completed = true;
