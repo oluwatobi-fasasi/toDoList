@@ -7,7 +7,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -53,9 +52,6 @@ This is a list of tasks that an individual needs to complete or accomplish. Task
 - 
 <!-- Live Demo -->
 
-### Live Demo <a name="live-demo"></a>
-
-[visit here](https://oluwatobi-fasasi.github.io/toDoList/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
