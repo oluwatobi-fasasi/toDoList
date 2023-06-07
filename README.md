@@ -55,7 +55,7 @@ This is a list of tasks that an individual needs to complete or accomplish. Task
 
 ### Live Demo <a name="live-demo"></a>
 
-[visit here](https://oluwatobi-fasasi.github.io/To-Do-List/dist/)
+[visit here](https://oluwatobi-fasasi.github.io/toDoList/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
