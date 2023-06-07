@@ -9,18 +9,32 @@ body {
   font-family: sans-serif;
 }
 
+.input-label{
+  display: flex;
+  gap: 1rem;
+}
+
 h4 {
   padding-left: 1rem;
   padding-top: 1rem;
 }
 
-.add-list {
+.add-list,
+.list {
   border: none;
   padding-left: 1rem;
+  width:100%;
 }
 
-.add-list:focus {
+.add-list:focus,
+.list:focus {
   outline: none;
+}
+
+.submit-form{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
 }
 
 .card {
@@ -28,6 +42,13 @@ h4 {
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.h4-refresh {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  padding-top: 1rem;
 }
 
 hr {
