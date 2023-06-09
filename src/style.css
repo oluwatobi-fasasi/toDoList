@@ -90,3 +90,7 @@ footer {
   margin: 2rem 1rem;
   background-color: #fff;
 }
+
+.checked {
+  text-decoration: line-through;
+}

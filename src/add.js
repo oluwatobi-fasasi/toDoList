@@ -6,7 +6,7 @@ class AddToDo {
   }
 
   addToDo(description) {
-    const addToDoObj = { description, completed: false, index: this.toDo.length + 1 };
+    const addToDoObj = { description, completed: false, num: this.toDo.length + 1 };
     this.toDo.push(addToDoObj);
     localStorage.setItem('toDo', JSON.stringify(this.toDo));
   }
@@ -16,7 +16,7 @@ class AddToDo {
       if (e.key === 'Enter') {
         e.preventDefault();
         this.addToDo(this.userInput.value.trim());
-        this.form.submit();
+        window.location.reload();
         this.form.reset();
       }
     });

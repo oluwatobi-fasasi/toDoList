@@ -2,11 +2,13 @@ import './style.css';
 import activ from './add.js';
 import removeTodo from './remove.js';
 import editTodo from './edit.js';
+import deleteCompleted from './completed.js';
 
 class ToDo {
   constructor() {
     this.toDo = JSON.parse(localStorage.getItem('toDo')) || [];
     this.listContainer = document.getElementById('list-container');
+    this.clearAllCompleted = document.getElementById('clear');
   }
 
   renderToDo() {
@@ -68,11 +70,24 @@ class ToDo {
           }
         }
       });
+
+      checkBox.addEventListener('change', () => {
+        label.classList.toggle('checked');
+        if (todo.completed === false) {
+          todo.completed = true;
+        } else {
+          todo.completed = false;
+        }
+        localStorage.setItem('toDo', JSON.stringify(this.toDo));
+      });
     }
   }
 
   init() {
     activ();
+    this.clearAllCompleted.addEventListener('click', () => {
+      deleteCompleted();
+    });
     this.renderToDo();
   }
 }
