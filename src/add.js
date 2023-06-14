@@ -28,4 +28,4 @@ function activ() {
   newToDo.activ();
 }
 
-export {activ, AddToDo};
+export { activ, AddToDo };
