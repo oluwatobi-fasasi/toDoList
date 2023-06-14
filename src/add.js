@@ -23,7 +23,9 @@ class AddToDo {
   }
 }
 
-export default function activ() {
+function activ() {
   const newToDo = new AddToDo();
   newToDo.activ();
 }
+
+export {activ, AddToDo};
