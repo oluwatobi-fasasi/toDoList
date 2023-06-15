@@ -120,11 +120,18 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Oluwatobi**
 
 - GitHub: [@oluwatobi](https://github.com/oluwatobi-fasasi)
 - Twitter: [@Fasasi](https://twitter.com/FasasiTobi1)
 - LinkedIn: [Fasasi](https://www.linkedin.com/in/abdulwasih-oluwatobi-fasasi-129a8b109/)
+
+
+👤 **Vikas Chib**
+
+- GitHub: [@vikas924](https://github.com/vikas924)
+- Twitter: [@vikas410190](https://twitter.com/vikas410190)
+- LinkedIn: [Vikas Singh](https://www.linkedin.com/in/vikas-singh-586a07132/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
