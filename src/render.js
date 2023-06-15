@@ -85,7 +85,7 @@ export default class ToDo {
   init() {
     activ();
     this.clearAllCompleted.addEventListener('click', () => {
-      deleteCompleted();
+      deleteCompleted(this.toDo);
     });
     this.renderToDo();
   }
