@@ -4,7 +4,6 @@ const deleteCompleted = (toDo) => {
     toDo[i].num = i + 1;
   }
   localStorage.setItem('toDo', JSON.stringify(toDo));
-  window.location.reload();
 };
 
 export default deleteCompleted;

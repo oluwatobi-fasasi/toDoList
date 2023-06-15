@@ -1,5 +1,6 @@
 import { activ } from './add.js';
 import removeTodo from './remove.js';
+import status from './status.js';
 import editTodo from './edit.js';
 import deleteCompleted from './completed.js';
 
@@ -72,12 +73,7 @@ export default class ToDo {
 
       checkBox.addEventListener('change', () => {
         label.classList.toggle('checked');
-        if (todo.completed === false) {
-          todo.completed = true;
-        } else {
-          todo.completed = false;
-        }
-        localStorage.setItem('toDo', JSON.stringify(this.toDo));
+        status(todo, this.toDo);
       });
     }
   }
@@ -86,6 +82,7 @@ export default class ToDo {
     activ();
     this.clearAllCompleted.addEventListener('click', () => {
       deleteCompleted(this.toDo);
+      window.location.reload();
     });
     this.renderToDo();
   }
